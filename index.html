@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samante Barber Shop | Premium Haircuts & Grooming</title>
+    <!-- Font Awesome for Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR / HEADER -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-scissors"></i> SAMANTE <span>BARBER SHOP</span>
+        </div>
+
+        <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="search" class="search-box" id="searchInput" placeholder="Search haircuts & services..." aria-label="Search services">
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#barbers">Barbers</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#booking" class="nav-btn">Book Now</a>
+            <a href="#feedback">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="sub-heading">EST. 2026 • BUENAVISTA, BOHOL</span>
+            <h1>LOOK SHARP.<br>FEEL CONFIDENT.</h1>
+            <p>Experience top-tier grooming and precision haircuts tailored to your style.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary"><i class="fa-regular fa-calendar-check"></i> Book Appointment</a>
+                <a href="#services" class="btn btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & HAIRCUTS SECTION -->
+    <section id="services" class="container">
+        <div class="section-header">
+            <h2 class="section-title">OUR SERVICES & PRICING</h2>
+            <p class="section-subtitle">Crafted with precision and attention to detail</p>
+        </div>
+
+        <div class="cards-grid" id="cardsContainer">
+            
+            <div class="card searchable" data-title="Classic Cut">
+                <div class="card-img-wrapper">
+                    <img src="j.jpg" alt="Classic Cut" onerror="this.src='https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Classic Cut</h3>
+                    <p>Traditional clean cut tailored to suit your head shape and hair style.</p>
+                    <div class="card-footer">
+                        <span class="price">₱100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Low Fade">
+                <div class="card-img-wrapper">
+                    <img src="A.jpg" alt="Low Fade" onerror="this.src='https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Low Fade</h3>
+                    <p>Subtle blend tapering down near the ears for a sleek, modern finish.</p>
+                    <div class="card-footer">
+                        <span class="price">₱120</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Mid Fade">
+                <div class="card-img-wrapper">
+                    <img src="G.jpg" alt="Mid Fade" onerror="this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Mid Fade</h3>
+                    <p>Balanced fade starting at temple level for a versatile, stylish look.</p>
+                    <div class="card-footer">
+                        <span class="price">₱130</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Skin Fade">
+                <div class="card-img-wrapper">
+                    <img src="H.jpg" alt="Skin Fade" onerror="this.src='https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Skin Fade</h3>
+                    <p>Ultra-sharp fade smoothly blending down to bare skin.</p>
+                    <div class="card-footer">
+                        <span class="price">₱150</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Precision Haircut">
+                <div class="card-img-wrapper">
+                    <img src="images/precision.jpg" alt="Precision Haircut" onerror="this.src='https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Precision Haircut</h3>
+                    <p>Detailed styling and texturizing for precise, custom requirements.</p>
+                    <div class="card-footer">
+                        <span class="price">₱100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Beard Grooming">
+                <div class="card-img-wrapper">
+                    <img src="images/beard.jpg" alt="Beard Grooming" onerror="this.src='https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Beard Grooming</h3>
+                    <p>Complete beard shaping, lining, and conditioning treatment.</p>
+                    <div class="card-footer">
+                        <span class="price">₱80</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card searchable" data-title="Haircut + Beard">
+                <div class="card-img-wrapper">
+                    <img src="images/combo.jpg" alt="Haircut + Beard" onerror="this.src='https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=500&q=80'">
+                </div>
+                <div class="card-body">
+                    <h3>Haircut + Beard Combo</h3>
+                    <p>The ultimate full-grooming package for a total head-to-beard refresh.</p>
+                    <div class="card-footer">
+                        <span class="price">₱180</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="noResults" class="no-results hidden">
+            <i class="fa-solid fa-circle-exclamation"></i> No haircuts or services found matching your search.
+        </div>
+    </section>
+
+    <!-- BARBERS SECTION -->
+    <section id="barbers" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MEET OUR MASTER BARBERS</h2>
+                <p class="section-subtitle">Skilled professionals dedicated to perfection</p>
+            </div>
+
+            <div class="barbers-grid">
+                <div class="barber-card">
+                    <div class="barber-img">
+                        <img src="images/barber1.jpg" alt="Barber Jayson" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <h3>Jayson</h3>
+                    <span class="role">Master Barber / Fade Specialist</span>
+                </div>
+
+                <div class="barber-card">
+                    <div class="barber-img">
+                        <img src="images/barber2.jpg" alt="Barber Mark" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <h3>Mark</h3>
+                    <span class="role">Stylist & Beard Specialist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="container">
+        <div class="section-header">
+            <h2 class="section-title">WHY CHOOSE US</h2>
+            <p class="section-subtitle">Providing quality haircuts with a premium experience</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>Professional Barbers</h3>
+                <p>Years of experience in modern cuts, traditional trims, and precision styling.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                <h3>Affordable Rates</h3>
+                <p>Premium service and high-end results without breaking your budget.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-pump-soap"></i></div>
+                <h3>Clean & Hygienic</h3>
+                <p>Sanitized tools, comfortable seating, and a relaxing shop environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="bg-light">
+        <div class="container form-container">
+            <div class="section-header">
+                <h2 class="section-title">BOOK YOUR APPOINTMENT</h2>
+                <p class="section-subtitle">Reserve your seat in under a minute</p>
+            </div>
+
+            <form id="bookingForm" class="styled-form">
+                <div class="form-group grid-2">
+                    <input type="text" id="customerName" placeholder="Full Name" aria-label="Full Name" required>
+                    <input type="tel" id="phone" placeholder="Phone Number (e.g., 09123456789)" aria-label="Phone Number" required>
+                </div>
+
+                <div class="form-group grid-2">
+                    <select id="service" aria-label="Select Service" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="Classic Cut - ₱100">Classic Cut - ₱100</option>
+                        <option value="Low Fade - ₱120">Low Fade - ₱120</option>
+                        <option value="Mid Fade - ₱130">Mid Fade - ₱130</option>
+                        <option value="Skin Fade - ₱150">Skin Fade - ₱150</option>
+                        <option value="Beard Grooming - ₱80">Beard Grooming - ₱80</option>
+                        <option value="Haircut + Beard - ₱180">Haircut + Beard Combo - ₱180</option>
+                    </select>
+
+                    <select id="barber" aria-label="Choose Barber" required>
+                        <option value="" disabled selected>Choose Preferred Barber</option>
+                        <option value="Jayson">Jayson (Fade Specialist)</option>
+                        <option value="Mark">Mark (Beard & Styling)</option>
+                    </select>
+                </div>
+
+                <div class="form-group grid-2">
+                    <input type="date" id="date" aria-label="Appointment Date" required>
+                    <input type="time" id="time" aria-label="Appointment Time" required>
+                </div>
+
+                <button type="submit" class="btn btn-submit">CONFIRM BOOKING</button>
+                <div id="bookingMsg" class="alert-message alert-success hidden">Booking submitted successfully!</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FEEDBACK SECTION -->
+    <section id="feedback" class="container">
+        <div class="section-header">
+            <h2 class="section-title">CUSTOMER FEEDBACK</h2>
+            <p class="section-subtitle">See what our clients say about us</p>
+        </div>
+
+        <form id="feedbackForm" class="styled-form">
+            <div class="form-group grid-2">
+                <input type="text" id="feedbackName" placeholder="Your Name" aria-label="Your Name" required>
+                <select id="rating" aria-label="Select Rating" required>
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="5 Stars">⭐⭐⭐⭐⭐ (5/5 Excellent)</option>
+                    <option value="4 Stars">⭐⭐⭐⭐ (4/5 Very Good)</option>
+                    <option value="3 Stars">⭐⭐⭐ (3/5 Good)</option>
+                    <option value="2 Stars">⭐⭐ (2/5 Average)</option>
+                    <option value="1 Star">⭐ (1/5 Poor)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea id="comment" rows="4" placeholder="Share your experience..." aria-label="Feedback comment" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">SEND FEEDBACK</button>
+            <div id="feedbackMsg" class="alert-message alert-success hidden">Thank you for your feedback!</div>
+        </form>
+
+        <div id="feedbackList" class="feedback-list"></div>
+    </section>
+
+    <!-- LOCATION & FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>SAMANTE BARBER SHOP</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Congawa, Buenavista, Bohol</p>
+                <p><i class="fa-solid fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Samante Barber Shop. All rights reserved.</p>
+                <button onclick="openAdminModal()" class="admin-btn"><i class="fa-solid fa-user-gear"></i> Admin Dashboard</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADMIN MODAL -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Admin Dashboard (Bookings)</h2>
+                <span class="close-btn" onclick="closeAdminModal()">&times;</span>
+            </div>
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Service</th>
+                            <th>Barber</th>
+                            <th>Date/Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminBookingTable">
+                        <!-- Dynamic bookings generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
